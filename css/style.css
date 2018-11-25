@@ -16,6 +16,13 @@
   outline: none;
 }
 
+.input {
+  font-size: 15px;
+  padding: 26px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+
 .main {
   background-color: #f5f5f5;
   padding: 60px 0;
@@ -37,7 +44,7 @@
   font-family: 'Museo Sans Bold', sans-serif;
   margin-bottom: 50px;
   margin-top: 20px;
-  line-height: 55;
+  line-height: 55px;
 }
 
 .main-text__title span {
@@ -93,6 +100,95 @@
 
 .main-advantages__img-3 {
   background-image: url("../img/main/paint-board.png");
+}
+
+.feedback {
+  padding: 94px 0;
+  background: url("../img/feedback/feedback_bg.jpg") no-repeat center right -40%;
+}
+
+.form {
+  max-width: 575px;
+}
+
+.form__title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 35px;
+  margin-bottom: 45px;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.form__input {
+  width: 270px;
+  margin-bottom: 25px;
+}
+
+.form__input:first-child {
+  margin-right: 30px;
+}
+
+.form__button {
+  padding: 28px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+
+.form__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__recall-time {
+  width: 225px;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+.form__line-break {
+  display: block;
+}
+
+.form__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-right: 18px;
+}
+
+.form__phone:before {
+  content: url("../img/feedback/phone-receiver.png");
+  margin-right: 22px;
+}
+
+.form__recall-text {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form__phone-number {
+  font-size: 15px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  display: block;
+  text-decoration: none;
+  color: #333333;
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -494,6 +590,11 @@ template {
   color: #333333;
   font-family: 'Museo Sans Bold', sans-serif;
   font-size: 20px;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
