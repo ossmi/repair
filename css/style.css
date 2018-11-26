@@ -104,7 +104,25 @@
 
 .feedback {
   padding: 94px 0;
-  background: url("../img/feedback/feedback_bg.jpg") no-repeat center right -40%;
+  background: url("../img/feedback/feedback_bg.jpg") no-repeat center left 1000px;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+}
+
+.input-name {
+  margin-right: 30px;
 }
 
 .form {
@@ -126,10 +144,6 @@
 .form__input {
   width: 270px;
   margin-bottom: 25px;
-}
-
-.form__input:first-child {
-  margin-right: 30px;
 }
 
 .form__button {
@@ -609,5 +623,113 @@ body {
 
 img {
   max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 992px;
+  }
+  .form {
+    margin: auto;
+    text-align: center;
+  }
+  .feedback {
+    background: #fff;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 768px;
+  }
+  .main-text__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .feedback {
+    background: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .logo_img {
+    width: 77px;
+    height: 37px;
+  }
+  .header-text__phone {
+    font-size: 20px;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    max-width: 400px;
+    margin: auto;
+  }
+  .main-text__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .hidden-xs {
+    display: none;
+  }
+  .form {
+    margin: 0;
+  }
+  .form__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .form__input {
+    display: block;
+    margin: 20px auto;
+  }
+  .next_line {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  .header-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-text__city {
+    font-size: 12px;
+  }
+  .header-text__phone {
+    font-size: 12px;
+  }
+  .button {
+    padding: 10px;
+  }
+  .form__recall-time {
+    font-size: 10px;
+    width: 50%;
+  }
+  .form__recall-text {
+    font-size: 10px;
+  }
+  .form__phone-number {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

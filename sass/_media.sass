@@ -1,0 +1,71 @@
+@media (max-width: 1200px)
+  .container
+    width: 992px
+  .form
+    margin: auto
+    text-align: center
+  .feedback
+    background: #fff
+
+@media (max-width: 992px)
+  .container
+    width: 768px
+  .main
+    &-text
+      &__title
+        font-size: 30px
+        line-height: 36px
+  .feedback
+    background: #fff
+
+@media (max-width: 768px)
+  .container
+    width: 90%
+  .logo_img
+    width: 77px
+    height: 37px
+  .header-text__phone
+    font-size: 20px
+  .main
+    &-wrap
+      flex-direction: column
+    &-text
+      max-width: 400px 
+      margin: auto
+      &__title
+        text-align: center
+        font-size: 24px
+        line-height: 20px
+  .hidden-xs
+    display: none
+  .form
+    margin: 0
+    &__title
+      font-size: 18px
+      line-height: 20px
+    &__input
+      display: block
+      margin: 20px auto
+  .next_line
+    display: block
+
+@media (max-width: 576px)  
+  .container
+    width: 95%
+  .header-text
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &__city
+      font-size: 12px
+    &__phone
+      font-size: 12px
+  .button
+    padding: 10px
+  .form__recall-time
+    font-size: 10px
+    width: 50%
+  .form__recall-text
+    font-size: 10px
+  .form__phone-number
+    font-size: 10px
