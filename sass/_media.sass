@@ -55,17 +55,37 @@
   .header-text
     display: flex
     flex-direction: column
-    justify-content: center
     &__city
       font-size: 12px
     &__phone
       font-size: 12px
-  .button
+      margin-bottom: 5px
+  .hidden-xxs
+    display: none 
+  .button_1
+    border-radius: 100%;
+    border: 1px solid #cccccc
     padding: 10px
-  .form__recall-time
-    font-size: 10px
-    width: 50%
-  .form__recall-text
-    font-size: 10px
-  .form__phone-number
-    font-size: 10px
+    background: url('../img/feedback/phone-receiver.png') no-repeat center
+    background-size: 60%
+  .button
+    padding: 15px
+  .form
+    &__input
+      font-size: 14px
+      padding: 15px
+    &__button
+      font-size: 14px
+    &__phone
+      &:before
+        margin-right: 14px
+    &__recall-time
+      font-size: 8px
+      width: 40%
+    &__recall-text
+      font-size: 8px
+      margin-left: 0
+    &__phone-number
+      font-size: 10px
+  .header-text__contacts
+    margin: 0 !important

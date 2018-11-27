@@ -188,8 +188,14 @@
 }
 
 .form__phone:before {
-  content: url("../img/feedback/phone-receiver.png");
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: url("../img/feedback/phone-receiver.png") no-repeat center;
   margin-right: 22px;
+  border: 1px solid #cccccc;
+  border-radius: 100%;
+  background-size: 40%;
 }
 
 .form__recall-text {
@@ -708,28 +714,50 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .header-text__city {
     font-size: 12px;
   }
   .header-text__phone {
     font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .hidden-xxs {
+    display: none;
+  }
+  .button_1 {
+    border-radius: 100%;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    background: url("../img/feedback/phone-receiver.png") no-repeat center;
+    background-size: 60%;
   }
   .button {
-    padding: 10px;
+    padding: 15px;
+  }
+  .form__input {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .form__button {
+    font-size: 14px;
+  }
+  .form__phone:before {
+    margin-right: 14px;
   }
   .form__recall-time {
-    font-size: 10px;
-    width: 50%;
+    font-size: 8px;
+    width: 40%;
   }
   .form__recall-text {
-    font-size: 10px;
+    font-size: 8px;
+    margin-left: 0;
   }
   .form__phone-number {
     font-size: 10px;
+  }
+  .header-text__contacts {
+    margin: 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
