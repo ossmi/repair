@@ -1,0 +1,129 @@
+.modal
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.52)
+  left: 0
+  top: 0
+  z-index: 99
+  display: flex
+  display: none
+  &__wrap
+    width: 1170px
+    display: flex
+    margin: auto
+  &__dialog1
+    width: 600px  
+    height: 674px
+    background-color: #f7f7f7
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+  &__dialog2
+    width: 570px  
+    height: 674px
+    background-color: #fff
+    position: relative
+  &_visible
+    display: flex
+  &__close
+    position: absolute
+    top: 15px
+    right: 15px
+    &:hover
+      cursor: pointer
+.offer
+  width: 409px
+  height: 519px
+  margin: 80px 113px 75px 78px
+.offer__price
+  display: flex
+  flex-direction: column
+.line
+  width: 42px
+  height: 2px
+  margin-bottom: 11px
+.style-price
+  +bold
+.block1
+  height: 85px
+  display: flex
+  margin-bottom: 15px
+  &__img
+    width: 120px
+    height: 85px
+  &__title
+    margin-top: 1px
+    font-size: 16px
+    +bold
+    margin-bottom: 12px
+  &__text
+    display: flex
+    flex-direction: column
+    margin-left: 29px
+  &__price
+    font-size: 16px
+    /* margin-bottom: 1px */
+.block2
+  height: 85px
+  display: flex
+  margin-bottom: 15px
+  &__img
+    width: 120px
+    height: 85px
+  &__title
+    margin-top: 16px
+    font-size: 16px
+    +bold
+    margin-bottom: 8px
+  &__text
+    display: flex
+    flex-direction: column
+    margin-left: 29px
+  &__price
+    font-size: 16px
+.list
+  &__title
+    font-size: 14px
+    +bold
+    margin-bottom: 28px
+  &__open
+    list-style-image: url(../img/modal_1/point.png);
+    padding-left: 15.5px
+    height: 140px
+  &__item
+    margin-bottom: 9px
+    font-size: 14px
+    font-weight: 400
+.m-form
+  width: 370px
+  margin: 80px 100px 76px 100px
+  &__title
+    text-align: center
+    margin-bottom: 52px
+    font-size: 22px
+    +bold
+  &__subtitle
+    text-align: center
+    margin-bottom: 53px
+    font-size: 16px
+  &__input
+    margin-bottom: 15px
+    width: 100%
+  &__recall
+    margin-top: 33px
+    text-align: center
+    font-size: 15px
+    margin-bottom: 13px
+  &__phone-number
+    display: flex
+    justify-content: center
+    font-size: 24px
+    +bold
+    text-decoration: none
+    color: $text-color
+
+    
+
