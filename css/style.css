@@ -612,6 +612,35 @@ template {
   font-size: 20px;
 }
 
+.portfolio {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: url("../img/portfolio/bcg_portfolio.png") no-repeat center left 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.arrow_right {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+}
+
 .modal {
   position: fixed;
   width: 100%;
@@ -648,7 +677,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .modal__dialog2 {
@@ -851,6 +879,15 @@ img {
   max-width: 100%;
 }
 
+.section-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 45px;
+}
+
+.section-title_center {
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 992px;
@@ -875,8 +912,20 @@ img {
   .feedback {
     background: #fff;
   }
+  .modal {
+    overflow-y: scroll;
+  }
   .modal__wrap {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal__dialog2 {
+    width: 600px;
   }
 }
 
@@ -981,6 +1030,78 @@ img {
   }
   .header-text__contacts {
     margin: 0 !important;
+  }
+  .modal__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+  .modal__dialog1 {
+    width: 320px;
+  }
+  .modal__dialog2 {
+    width: 320px;
+  }
+  .offer__price {
+    width: 270px;
+  }
+  .m-form {
+    width: 200px;
+    margin: auto;
+  }
+  .m-form__title {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .m-form__subtitle {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .m-form__input {
+    padding: 15px;
+  }
+  .m-form__recall {
+    font-size: 12px;
+  }
+  .m-form__phone-number {
+    font-size: 14px;
+  }
+  .block1__img {
+    width: 120px;
+    height: 85px;
+  }
+  .block1__title {
+    font-size: 12px;
+  }
+  .block1__text {
+    margin-left: 10px;
+  }
+  .block1__price {
+    font-size: 12px;
+  }
+  .block2__img {
+    width: 120px;
+    height: 85px;
+  }
+  .block2__title {
+    font-size: 12px;
+  }
+  .block2__text {
+    margin-left: 10px;
+  }
+  .block2__price {
+    font-size: 12px;
+  }
+  .list__title {
+    font-size: 12px;
+  }
+  .list__item {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

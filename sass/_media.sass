@@ -18,8 +18,12 @@
   .feedback
     background: #fff
   .modal
+    overflow-y: scroll
     &__wrap
-      display: block
+      flex-direction: column
+      align-items: center
+    &__dialog2
+      width: 600px  
   
 
 @media (max-width: 768px)
@@ -93,3 +97,55 @@
       font-size: 10px
   .header-text__contacts
     margin: 0 !important
+  .modal
+    &__wrap
+      flex-direction: column
+      align-items: center
+      margin: auto
+    &__dialog1
+      width: 320px
+    &__dialog2
+      width: 320px
+  .offer__price
+    width: 270px
+  .m-form
+    width: 200px
+    margin: auto
+    &__title
+      font-size: 14px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 12px
+      margin-bottom: 20px
+    &__input
+      padding: 15px
+    &__recall
+      font-size: 12px
+    &__phone-number
+      font-size: 14px
+  .block1
+    &__img
+      width: 120px
+      height: 85px
+    &__title
+      font-size: 12px
+    &__text
+      margin-left: 10px
+    &__price
+      font-size: 12px
+  .block2
+    &__img
+      width: 120px
+      height: 85px
+    &__title
+      font-size: 12px
+    &__text
+      margin-left: 10px
+    &__price
+      font-size: 12px
+  .list
+    &__title
+      font-size: 12px
+    &__item
+      font-size: 12px
+    
