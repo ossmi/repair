@@ -615,7 +615,6 @@ template {
 
 .portfolio {
   background-color: #f5f5f5;
-  background-size: contain;
   position: relative;
   z-index: 1;
   padding: 100px 0;
@@ -625,9 +624,9 @@ template {
   content: '';
   left: 0;
   top: 0;
+  background: url("../img/portfolio/bcg_portfolio.png") left 0px;
   width: 50%;
   height: 100%;
-  background: url("../img/portfolio/bcg_portfolio.png") no-repeat center left 0px;
   position: absolute;
   z-index: -1;
 }
@@ -636,6 +635,7 @@ template {
   font-family: 'Museo Sans Bold', sans-serif;
   font-size: 30px;
   margin-bottom: 99px;
+  margin-top: 0;
 }
 
 .slider__item {
