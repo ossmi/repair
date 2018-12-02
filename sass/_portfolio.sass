@@ -1,23 +1,44 @@
 .portfolio
   background-color: $light-bg-color
-  padding: 100px 0
   background-size: contain
   position: relative
   z-index: 1
+  padding: 100px 0
   &:before
     content: ''
     left: 0
     top: 0
     width: 50%
     height: 100%
-    background: url('../img/portfolio/bcg_portfolio.png') no-repeat center left 0px
+    background: url('../img/portfolio/bcg_portfolio.png') no-repeat center left 0px 
     position: absolute
     z-index: -1
+.section-title_center
+  +bold
+  font-size: 30px
+  margin-bottom: 99px
 .slider
   &__item
     text-align: center
-.arrow
-  &_right
-    width: 40px
-    height: 40px
-    background-color: #000
+    img
+      margin: auto
+.img_arrow
+  width: 45px
+  height: 19px
+.button_arrow
+  margin-top: 68px
+  display: flex
+  justify-content: center
+.button_prev , .button_next
+  padding: 0
+  border: 0
+  background-color: transparent
+  margin-right: 15px
+  outline: 0
+  &:hover
+    cursor: pointer
+.button_next
+  margin-left: 15px
+  
+  
+

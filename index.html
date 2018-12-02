@@ -143,9 +143,10 @@
           <div class="m-form__recall">Или Вы можете перезвонить нам сами <span class="form__line-break"> по телефону:</span></div>
           <a class="m-form__phone-number" href="tel:+78182425131">+7 (8182) 42-51-31</a>
       </div>
-      <div class="modal__form"></div>
-      <div class="modal__close">&#10006</div>
+      
     </div>
+    <div class="modal__form"></div>
+    <div class="modal__close">&#10006</div>
   </div>   
 </div>
 
@@ -189,25 +190,54 @@
       </div> 
     </div>
   </div>
-  <button class="button_prev">Предыдущий</button>
-  <button class="button_next">Следующий</button> 
+  <div class="button_arrow">
+  <button class="button_prev"><img class="img_arrow" src="img/portfolio/left-arrow.png" alt="Перелистнуть влево"></button>
+  <button class="button_next"><img class="img_arrow" src="img/portfolio/right-arrow.png" alt="Перелистнуть вправо"></button> 
+  </div>
 </section>
 
 
-<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script>
 $(document).ready(function(){
   $('.slider').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     /* nextArrow: '<div class="arrow arrow_right"></div>'  */
     prevArrow: $('.button_prev'),
-    nextArrow: $('.button_next')
+    nextArrow: $('.button_next'),
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
   });
 });
-</script> -->
+</script>
 
 
 </body>

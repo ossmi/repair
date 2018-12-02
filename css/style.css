@@ -108,6 +108,7 @@
   background-size: contain;
   position: relative;
   z-index: 1;
+  height: 595px;
 }
 
 .feedback:before {
@@ -614,10 +615,10 @@ template {
 
 .portfolio {
   background-color: #f5f5f5;
-  padding: 100px 0;
   background-size: contain;
   position: relative;
   z-index: 1;
+  padding: 100px 0;
 }
 
 .portfolio:before {
@@ -631,14 +632,49 @@ template {
   z-index: -1;
 }
 
+.section-title_center {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 30px;
+  margin-bottom: 99px;
+}
+
 .slider__item {
   text-align: center;
 }
 
-.arrow_right {
-  width: 40px;
-  height: 40px;
-  background-color: #000;
+.slider__item img {
+  margin: auto;
+}
+
+.img_arrow {
+  width: 45px;
+  height: 19px;
+}
+
+.button_arrow {
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button_prev, .button_next {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  margin-right: 15px;
+  outline: 0;
+}
+
+.button_prev:hover, .button_next:hover {
+  cursor: pointer;
+}
+
+.button_next {
+  margin-left: 15px;
 }
 
 .modal {
@@ -661,6 +697,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+  position: relative;
 }
 
 .modal__dialog1 {
@@ -683,7 +720,7 @@ template {
   width: 570px;
   height: 674px;
   background-color: #fff;
-  position: relative;
+  /* position: relative */
 }
 
 .modal_visible {
@@ -899,6 +936,9 @@ img {
   .feedback {
     background: #fff;
   }
+  .slider__item img {
+    width: 95%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -926,6 +966,16 @@ img {
   }
   .modal__dialog2 {
     width: 600px;
+  }
+  .section-title_center {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .portfolio {
+    padding: 50px 0;
+  }
+  .portfolio:before {
+    background: transparent;
   }
 }
 
@@ -959,7 +1009,7 @@ img {
     display: none;
   }
   .form {
-    margin: 0;
+    margin: auto;
   }
   .form__title {
     font-size: 18px;
@@ -971,6 +1021,12 @@ img {
   }
   .next_line {
     display: block;
+  }
+  .section-title_center {
+    font-size: 18px;
+  }
+  .slider__item img {
+    width: 75%;
   }
 }
 
@@ -1102,6 +1158,24 @@ img {
   }
   .list__item {
     font-size: 12px;
+  }
+  .portfolio {
+    padding: 25px;
+  }
+  .section-title_center {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .slider__item img {
+    width: 75%;
+  }
+  .img_arrow {
+    width: 35px;
+    height: 12px;
+  }
+  .button_arrow {
+    margin-top: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
