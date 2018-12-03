@@ -241,7 +241,7 @@ $(document).ready(function(){
 
     console.log(fioVal + '' + phoneVal);
     $.ajax({
-      url: '/send.php',
+      url: './send.php',
       data: {fio:fioVal, phone:phoneVal},
       success: function(){
         alert('Load was performed.');
