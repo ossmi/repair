@@ -680,12 +680,12 @@ template {
 
 .cost {
   padding: 106px 0 100px 0;
-  background: url("../img/cost/bcg-cost.png") no-repeat center right 25%;
+  background: url("../img/cost/bcg-cost.png") no-repeat center left 600px;
   background-size: contain;
   position: relative;
   z-index: 1;
   height: 660px;
-  color: #000;
+  margin: 0;
 }
 
 .cost:before {
@@ -700,6 +700,7 @@ template {
 }
 
 .cost__wrap {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,6 +711,7 @@ template {
 
 .questions {
   width: 60%;
+  color: #000;
 }
 
 .questions__wrap {
@@ -722,43 +724,89 @@ template {
   font-family: 'Museo Sans Bold', sans-serif;
   margin-bottom: 50px;
   margin-top: 0;
+  line-height: 33px;
 }
 
 .questions__subtitle {
   font-size: 16px;
   margin-bottom: 94px;
+  margin-top: 0;
 }
 
-.qu-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 240px;
-  padding: 0;
+.questions__item {
+  margin-bottom: 20px;
+  margin-left: 70px;
+  position: relative;
+  display: block;
 }
 
-.qu-list__item {
-  font-size: 18px;
-  font-family: 'Museo Sans Medium';
-}
-
-.qu-list__item:before {
+.questions__item:before {
   content: '1.';
-  font-size: 14px;
+  position: absolute;
   width: 35px;
   height: 35px;
-  border-radius: 50%;
-  border: 1px solid #000000;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 35px;
+  border-radius: 100%;
+  left: -70px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 35px;
+}
+
+.questions__item:nth-child(2):before {
+  content: '1.';
+}
+
+.questions__item:nth-child(3):before {
+  content: '3.';
+}
+
+.questions__item:nth-child(4):before {
+  content: '4.';
+}
+
+.qu-form {
+  color: #333333;
+  text-align: center;
+  width: 370px;
+  margin-left: 134px;
+  line-height: 33px;
+}
+
+.qu-form__title {
+  margin: 0;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  margin-bottom: 50px;
+}
+
+.qu-form__subtitle {
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 49px;
+}
+
+.qu-form__input {
+  margin: 0;
+  width: 370px;
+  height: 65px;
+  margin-bottom: 15px;
+}
+
+.qu-form__button {
+  width: 368px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 28px auto;
+  font-size: 16px;
+  margin-bottom: 33px;
+}
+
+.qu-form__recall {
+  font-size: 15px;
+  margin: 0;
 }
 
 .modal {

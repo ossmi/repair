@@ -1,11 +1,12 @@
 .cost
+  
   padding: 106px 0 100px 0
-  background: url('../img/cost/bcg-cost.png') no-repeat center right 25%
+  background: url('../img/cost/bcg-cost.png') no-repeat center left 600px
   background-size: contain
   position: relative
   z-index: 1
   height: 660px
-  color: #000
+  margin: 0
   &:before
     content: ''
     left: 0
@@ -16,10 +17,12 @@
     position: absolute
     z-index: -1
 .cost__wrap
+  margin: 0
   display: flex
   justify-content: center
 .questions
   width: 60%
+  color: #000
   &__wrap
     width: 515px
     margin-right: 150px
@@ -28,29 +31,70 @@
     +bold
     margin-bottom: 50px
     margin-top: 0
+    line-height: 33px
   &__subtitle
     font-size: 16px
     margin-bottom: 94px
-.qu-list
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  height: 240px
-  padding: 0
-
+    margin-top: 0
   &__item
-    font-size: 18px
-    font-family: 'Museo Sans Medium'
+    margin-bottom: 20px
+    margin-left: 70px
+    position: relative
+    display: block
     &:before
       content: '1.'
-      font-size: 14px
+      position: absolute
       width: 35px
-      height: 35px 
-      border-radius: 50%
-      border: 1px solid #000000
-      background-position: center
-      background-repeat: no-repeat
-      margin-right: 35px
+      height: 35px
+      border-radius: 100%
+      left: -70px
+      top: 50%
+      transform: translateY(-50%)
+      border: 1px solid #000
+      text-align: center
+      line-height: 35px
+    &:nth-child(2):before
+      content: '1.'
+    &:nth-child(3):before
+      content: '3.'
+    &:nth-child(4):before
+      content: '4.'
+
+      
+ 
+      
+.qu-form
+  color: $text-color
+  text-align: center
+  width: 370px
+  margin-left: 134px
+  line-height: 33px
+  &__title
+    margin: 0
+    font-size: 22px
+    +bold
+    margin-bottom: 50px
+  &__subtitle
+    margin: 0
+    font-size: 16px
+    margin-bottom: 49px
+  &__input
+    margin: 0
+    width: 370px
+    height: 65px
+    margin-bottom: 15px
+    
+  &__button
+    width: 368px
+    height: 70px
+    margin-top: 15px
+    padding: 28px auto
+    font-size: 16px
+    margin-bottom: 33px
+  &__recall
+    font-size: 15px
+    margin: 0
+
   
       
     
