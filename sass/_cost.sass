@@ -1,12 +1,11 @@
 .cost
-  
   padding: 106px 0 100px 0
   background: url('../img/cost/bcg-cost.png') no-repeat center left 600px
   background-size: contain
   position: relative
   z-index: 1
   height: 660px
-  margin: 0
+  
   &:before
     content: ''
     left: 0
@@ -20,8 +19,9 @@
   margin: 0
   display: flex
   justify-content: center
+  margin: auto
 .questions
-  width: 60%
+  width: 50%
   color: #000
   &__wrap
     width: 515px
@@ -53,20 +53,16 @@
       border: 1px solid #000
       text-align: center
       line-height: 35px
-    &:nth-child(2):before
-      content: '1.'
-    &:nth-child(3):before
-      content: '3.'
     &:nth-child(4):before
+      content: '2.'
+    &:nth-child(5):before
+      content: '3.'
+    &:nth-child(6):before
       content: '4.'
-
-      
- 
-      
 .qu-form
   color: $text-color
   text-align: center
-  width: 370px
+  width: 50%
   margin-left: 134px
   line-height: 33px
   &__title

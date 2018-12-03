@@ -10,6 +10,30 @@
     &__item
       img
         width: 95%
+  .questions
+    margin: 0
+    &__wrap
+      width: 85%
+      margin: auto
+    &__title
+      text-align: center
+      font-size: 17px
+      margin-bottom: 50px
+    &__subtitle
+      text-align: center
+      margin-bottom: 70px
+  .qu-form
+    margin: 0
+    &__title
+      text-align: center
+      font-size: 17px
+      margin-bottom: 50px
+    &__subtitle
+      text-align: center
+      margin-bottom: 50px
+    &__item
+      margin-bottom: 30px
+
 
 @media (max-width: 992px)
   .container
@@ -35,6 +59,37 @@
     padding: 50px 0
     &:before
       background: transparent
+  .cost
+    background: transparent
+    &:before
+      background: transparent
+  .cost__wrap
+    display: flex
+    flex-direction: column
+    margin: auto
+    align-items: center
+  .questions
+    margin-bottom: 50px
+    &__wrap
+      width: 95%
+    &__title
+      font-size: 16px
+      margin-bottom: 30px
+    &__subtitle
+      margin-bottom: 70px
+      font-size: 14px
+  .qu-form
+    &__title
+      font-size: 16px
+      margin-bottom: 25px
+    &__subtitle
+      text-align: center
+      margin-bottom: 25px
+      font-size: 14px
+    &__item
+      margin-bottom: 30px
+    &__input, &__button
+      width: 80%
 
 @media (max-width: 768px)
   .container
@@ -72,6 +127,24 @@
     &__item
       img
         width: 75%
+  .questions
+    margin-bottom: 50px
+    width: 400px
+    &__wrap
+      margin: auto
+    &__title
+      font-size: 16px
+      line-height: 20px
+    &__subtitle
+      margin-bottom: 50px
+      font-size: 16px
+  .qu-form
+    width: 400px
+    &__title
+      font-size: 16px
+      line-height: 20px
+    &__subtitle
+      font-size: 16px
 
 @media (max-width: 576px)  
   .container
@@ -179,4 +252,22 @@
     height: 12px
   .button_arrow
     margin-top: 25px
+  .cost
+    padding: 40px 0
+  .questions
+    width: 300px
+    &__title
+      font-size: 16px
+      line-height: 20px
+    &__subtitle
+      margin-bottom: 40px
+      font-size: 14px
+    &__item
+      margin-left: 50px
+      &:before
+        left: -50px
+  .qu-form
+    width: 300px
+    &__subtitle
+      font-size: 14px
     
