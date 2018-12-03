@@ -239,7 +239,7 @@ $(document).ready(function(){
     var fioVal = $('[name = fio]').val(),
         phoneVal = $('[name = phone]').val();
 
-    console.log (fioVal + '' + phoneVal);
+    console.log(fioVal + '' + phoneVal);
     $.ajax({
       url: '/send.php',
       data: {fio:fioVal, phone:phoneVal},
