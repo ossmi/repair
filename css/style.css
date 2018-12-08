@@ -47,7 +47,7 @@
   line-height: 55px;
 }
 
-.main-text__title span {
+.main-text__title__span {
   font-size: 20px;
   display: block;
   margin-top: 20px;
@@ -1014,6 +1014,69 @@ template {
   line-height: 50px;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map {
+  width: 50%;
+  min-height: 60%;
+}
+
+.contacts {
+  margin-left: 134px;
+}
+
+.contacts__invite {
+  margin: 0;
+  color: #000000;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 33px;
+  margin: 100px auto;
+}
+
+.contacts__info {
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 39px;
+  position: relative;
+  display: block;
+  margin-left: 38px;
+}
+
+.contacts__info:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-size: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -38px;
+  top: 10%;
+}
+
+.contacts__info:nth-child(2):before {
+  background-image: url("../img/footer/footer-icon-1.png");
+}
+
+.contacts__info:nth-child(3):before {
+  background-image: url("../img/footer/footer-icon-2.png");
+}
+
+.contacts__info:nth-child(4):before {
+  background-image: url("../img/footer/footer-icon-3.png");
+}
+
+.contacts__span {
+  display: block;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
 .modal {
   position: fixed;
   width: 100%;
@@ -1368,7 +1431,7 @@ img {
     background: transparent;
   }
   .cost {
-    height: 940px;
+    height: 1050px;
     background: transparent;
   }
   .cost:before {
@@ -1403,7 +1466,7 @@ img {
   }
   .qu-form__title {
     font-size: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
   .qu-form__subtitle {
     text-align: center;
@@ -1486,7 +1549,7 @@ img {
     font-size: 18px;
   }
   .cost {
-    height: 880px;
+    margin-bottom: 120px;
   }
   .slider__item img {
     width: 75%;
@@ -1530,6 +1593,27 @@ img {
     font-size: 19px;
     padding: 60px 0;
     line-height: 40px;
+  }
+  .footer {
+    display: block;
+  }
+  .map {
+    width: 100%;
+  }
+  .contacts {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+  }
+  .contacts__invite {
+    width: 100%;
+    font-size: 20px;
+    margin: 50px auto;
+  }
+  .contacts__info {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 150px;
   }
 }
 
@@ -1717,6 +1801,13 @@ img {
     font-size: 14px;
     padding: 60px 0;
     line-height: 36px;
+  }
+  .contacts__invite {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .contacts__info {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
