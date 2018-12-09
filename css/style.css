@@ -104,7 +104,7 @@
 
 .feedback {
   padding: 94px 0;
-  background: url("../img/feedback/feedback_bg.jpg") no-repeat center left 1000px;
+  background: url("../img/feedback/feedback_bg.jpg") no-repeat center left 1100px;
   background-size: contain;
   position: relative;
   z-index: 1;
@@ -115,7 +115,7 @@
   content: '';
   left: 0;
   top: 0;
-  width: 50%;
+  width: 55%;
   height: 100%;
   background-color: #fff;
   position: absolute;
@@ -625,7 +625,7 @@ template {
   left: 0;
   top: 0;
   background: url("../img/portfolio/bcg_portfolio.png") left 0px;
-  width: 50%;
+  width: 55%;
   height: 100%;
   position: absolute;
   z-index: -1;
@@ -680,7 +680,7 @@ template {
 
 .cost {
   padding: 106px 0 100px 0;
-  background: url("../img/cost/bcg-cost.png") no-repeat center left 600px;
+  background: url("../img/cost/bcg-cost.png") no-repeat center left 1100px;
   background-size: contain;
   position: relative;
   z-index: 1;
@@ -691,7 +691,7 @@ template {
   content: '';
   left: 0;
   top: 0;
-  width: 50%;
+  width: 55%;
   height: 100%;
   background-color: #ffc000;
   position: absolute;
@@ -710,7 +710,7 @@ template {
 }
 
 .questions {
-  width: 50%;
+  width: 55%;
   color: #000;
 }
 
@@ -770,7 +770,7 @@ template {
 .qu-form {
   color: #333333;
   text-align: center;
-  width: 50%;
+  width: 45%;
   margin-left: 134px;
   line-height: 33px;
 }
@@ -1012,6 +1012,7 @@ template {
   padding: 100px 0;
   font-weight: 400;
   line-height: 50px;
+  margin: 0;
 }
 
 .footer {
@@ -1021,7 +1022,7 @@ template {
 }
 
 .map {
-  width: 50%;
+  width: 55%;
   min-height: 60%;
 }
 
@@ -1075,6 +1076,101 @@ template {
 .contacts__span {
   display: block;
   font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.help {
+  margin: 100px auto 143px auto;
+}
+
+.help-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.help__block {
+  width: 370px;
+  height: 410px;
+  font-size: 16px;
+  line-height: 23px;
+  padding-left: 26px;
+  padding-top: 27px;
+}
+
+.help__block-1 {
+  background-image: url("../img/help/img-1.png");
+}
+
+.help__block-2 {
+  background-image: url("../img/help/img-2.png");
+}
+
+.help__block-3 {
+  background-image: url("../img/help/img-3.png");
+}
+
+.help__next-line {
+  display: block;
+}
+
+.help__bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.guarantee {
+  padding-bottom: 228px;
+}
+
+.guarantee-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.guarantee__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guarantee__img {
+  width: 270px;
+  height: 360px;
+  margin-bottom: 41px;
+}
+
+.guarantee__text {
+  max-width: 290px;
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.guarantee__title {
+  color: #000000;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 99px;
+}
+
+.guarantee__next-line {
+  display: block;
 }
 
 .modal {
@@ -1356,7 +1452,7 @@ img {
     margin-bottom: 70px;
   }
   .qu-form {
-    margin: 0;
+    margin: auto;
   }
   .qu-form__title {
     text-align: center;
@@ -1391,6 +1487,22 @@ img {
   }
   .advert__title {
     font-size: 28px;
+  }
+  .help {
+    margin: 100px auto;
+  }
+  .help__block {
+    width: 90%;
+    height: 340px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px;
+  }
+  .contacts {
+    margin-left: 60px;
+  }
+  .guarantee {
+    padding-bottom: 100px;
   }
 }
 
@@ -1431,8 +1543,9 @@ img {
     background: transparent;
   }
   .cost {
-    height: 1050px;
+    height: 1000px;
     background: transparent;
+    padding: 40px 0;
   }
   .cost:before {
     background: transparent;
@@ -1500,6 +1613,29 @@ img {
   .advert__title {
     font-size: 24px;
   }
+  .contacts {
+    margin-left: 60px;
+  }
+  .contacts__invite {
+    font-size: 18px;
+  }
+  .help {
+    margin: 60px auto;
+  }
+  .help__block {
+    padding-left: 5px;
+    width: 90%;
+    height: 300px;
+    font-size: 12px;
+  }
+  .guarantee {
+    padding-bottom: 60px;
+  }
+  .guarantee__title {
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1549,7 +1685,9 @@ img {
     font-size: 18px;
   }
   .cost {
-    margin-bottom: 120px;
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    height: 900px;
   }
   .slider__item img {
     width: 75%;
@@ -1614,6 +1752,47 @@ img {
     margin: auto;
     margin-bottom: 40px;
     width: 150px;
+  }
+  .help {
+    margin: 50px auto;
+  }
+  .help-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .help__block {
+    padding-left: 5px;
+    width: 370px;
+    height: 410px;
+    font-size: 16px;
+    line-height: 23px;
+    padding-left: 26px;
+  }
+  .guarantee {
+    padding-bottom: 30px;
+  }
+  .guarantee-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 60px;
+    padding-bottom: 0;
+  }
+  .guarantee__title {
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+  .guarantee__text {
+    margin-bottom: 30px;
+  }
+  .guarantee__img {
+    margin-bottom: 20px;
   }
 }
 
@@ -1762,7 +1941,7 @@ img {
   }
   .cost {
     padding: 40px 0;
-    height: 800px;
+    height: 900px;
   }
   .questions {
     width: 300px;
@@ -1809,6 +1988,20 @@ img {
   }
   .contacts__info {
     font-size: 14px;
+  }
+  .price__title {
+    padding-top: 50px;
+  }
+  .guarantee__title {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 50px;
+  }
+  .guarantee__text {
+    font-size: 16px;
+  }
+  .guarantee__img {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
