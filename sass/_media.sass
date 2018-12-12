@@ -1,11 +1,40 @@
+@media (max-width: 2000px)
+  .feedback
+    background: url('../img/feedback/feedback_bg.jpg') no-repeat center left 1000px
+  .cost
+    background: url('../img/cost/bcg-cost.png') no-repeat center left 1000px
+
+@media (max-width: 1800px)
+  .feedback
+    background: url('../img/feedback/feedback_bg.jpg') no-repeat center left 900px
+  .cost
+    background: url('../img/cost/bcg-cost.png') no-repeat center left 900px
+
+@media (max-width: 1650px)
+  .feedback
+    background: url('../img/feedback/feedback_bg.jpg') no-repeat center left 800px
+  .cost
+    background: url('../img/cost/bcg-cost.png') no-repeat center left 800px
+
+@media (max-width: 1450px)
+  .feedback
+    background: url('../img/feedback/feedback_bg.jpg') no-repeat center left 650px
+  .cost
+    background: url('../img/cost/bcg-cost.png') no-repeat center left 650px
+
 @media (max-width: 1200px)
   .container
     width: 992px
   .form
     margin: auto
     text-align: center
+  .main
+    &-img  
+      margin-top: 60px
+      height: auto
   .feedback
     background: #fff
+    padding: 64px 0
   .slider
     &__item
       img
@@ -39,15 +68,26 @@
     &-item
       width: 75%
       flex-wrap: wrap
-      justify-content: center
+      justify-content: space-between
       &__block
-        margin-bottom: 20px
+        // margin-bottom: 20px
+        margin-right: 20px
       &__img
         width: 80px
         height: 80px
         background-size: 20px
+      &__arrow
+        display: none
   .advert__title
     font-size: 28px
+  .modal
+    overflow-y: scroll
+    &__wrap
+      flex-direction: column
+      align-items: center
+      width: 600px
+    &__dialog2
+      width: 600px 
   .help
     margin: 100px auto
     &__block
@@ -60,24 +100,32 @@
     margin-left: 60px
   .guarantee
     padding-bottom: 100px
+  .cost
+    background: transparent
+    &:before
+      background: transparent
+    padding: 40px 0
 
 @media (max-width: 992px)
   .container
     width: 768px
   .main
+    height: 100%
+    &-wrap
+      flex-direction: column
     &-text
+      margin: auto
       &__title
         font-size: 30px
         line-height: 36px
+    &-image
+      margin: auto
+    &-img  
+      margin-top: 0
   .feedback
     background: #fff
-  .modal
-    overflow-y: scroll
-    &__wrap
-      flex-direction: column
-      align-items: center
-    &__dialog2
-      width: 600px 
+    padding: 54px 0
+  
   .section-title_center
     font-size: 24px
     margin-bottom: 50px
@@ -152,6 +200,21 @@
       font-size: 22px
       line-height: 36px
       margin-bottom: 50px
+    &__img
+      width: 90%
+      height: 90%
+  .help
+    margin: 50px auto
+    &-wrap
+      flex-wrap: wrap
+      justify-content: center
+    &__block
+      padding-left: 5px
+      width: 370px
+      height: 410px
+      font-size: 16px
+      line-height: 23px
+      padding-left: 26px
 
 
 @media (max-width: 768px)
@@ -182,6 +245,8 @@
     &__input
       display: block
       margin: 20px auto
+  .feedback
+    padding: 44px 0
   .next_line
     display: block
   .section-title_center
@@ -240,18 +305,7 @@
       margin: auto
       margin-bottom: 40px
       width: 150px
-  .help
-    margin: 50px auto
-    &-wrap
-      flex-wrap: wrap
-      justify-content: center
-    &__block
-      padding-left: 5px
-      width: 370px
-      height: 410px
-      font-size: 16px
-      line-height: 23px
-      padding-left: 26px
+  
   .guarantee
     padding-bottom: 30px
     &-wrap
@@ -308,6 +362,8 @@
       margin-left: 0
     &__phone-number
       font-size: 10px
+  .feedback
+      height: 520px
   .modal
     &__wrap
       flex-direction: column
@@ -402,6 +458,10 @@
         line-height: 36px
       &__subtitle 
         font-size: 16px
+    &-item
+      margin: auto
+      display: flex
+      justify-content: center
   .advert__title
     font-size: 14px
     padding: 60px 0

@@ -1,6 +1,7 @@
 .main
   background-color: $light-bg-color
   padding: 60px 0
+  height: 590px
   &-wrap
     display: flex
   &-text
@@ -11,12 +12,15 @@
       margin-bottom: 50px
       margin-top: 20px
       line-height: 55px
-      &__span
-        font-size: 20px
-        display: block
-        margin-top: 20px
-  &-image 
+    &__span
+      font-size: 20px
+      display: block
+      margin-top: 20px
+  &-image
     flex-basis: 50%
+    z-index: 2
+  &-img  
+    height: 630px
   &-advantages
     display: flex
     flex-direction: column
